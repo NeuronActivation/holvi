@@ -15,6 +15,6 @@ Then add the following repository configuration to your `pacman.conf`.
 
 ```ini
 [holvi]
-Server = <gh-pages-link-here>/$arch
+Server = https://neuronactivation.github.io/holvi/$arch
 ```
 
