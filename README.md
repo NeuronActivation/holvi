@@ -2,6 +2,19 @@
 
 Useless packages are hosted here.
 
+<details>
+  <summary>Packages</summary>
+  <br/>
+
+  | Package  | License |
+  | ------------- | ------------- |
+  | urbaani  | [MIT](https://raw.githubusercontent.com/jervw/urbaani-cli/main/LICENSE)  |
+  | ...  | ...  |
+ 
+  
+</details>
+
+Packages can be requested via issues or making a pull request.
 
 ## Usage
 
