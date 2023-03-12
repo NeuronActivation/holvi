@@ -1,0 +1,28 @@
+# Maintainer: Valtteri Viirret <viirretvaltteri@gmail.com>
+
+pkgname=yaac
+pkgver=0.2
+pkgrel=2
+pkgdesc="Yet another alarm-clock"
+arch=('x86_64')
+url=https://github.com/viirret/yaac
+license=('GPL2')
+depends=('sdl2' 'sdl2_mixer' 'sdl2_ttf' 'gnu-free-fonts' 'cmake')
+source=("https://github.com/viirret/yaac/archive/refs/tags/${pkgver}.tar.gz")
+sha256sums=('1dc8677b90237b316f67cda04897a0a8cead07fc0d2df869103be2cb96ec587e')
+
+build() {
+	cd "$srcdir/$pkgname-$pkgver"
+	mkdir -p build
+	cd build
+	cmake ..
+	make
+}
+
+package() {
+	install -Dm755 "$srcdir/$pkgname-$pkgver/build/x" "$pkgdir/usr/bin/$pkgname"
+
+    install -Dm644 "$srcdir/$pkgname-$pkgver/songs/click.mp3" "$pkgdir/usr/share/sounds/$pkgname"
+    install -Dm644 "$srcdir/$pkgname-$pkgver/songs/default.mp3" "$pkgdir/usr/share/sounds/$pkgname"
+}
+
