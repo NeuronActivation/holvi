@@ -21,8 +21,8 @@ Packages can be requested via issues or making a pull request.
 Add the [GPG](key/jervw.gpg) key to pacman keyring and then sign it locally:
 
 ```sh
-sudo pacman-key --recv-keys 99627FCBF2F3FD52
-sudo pacman-key --lsign-key 99627FCBF2F3FD52
+sudo pacman-key --recv-keys A885101D
+sudo pacman-key --lsign-key A885101D
 ```
 Then add the following repository configuration to your `pacman.conf`. 
 
