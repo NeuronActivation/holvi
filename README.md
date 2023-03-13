@@ -9,6 +9,7 @@ Useless packages are hosted here.
   | Package  | License |
   | ------------- | ------------- |
   | urbaani  | [MIT](https://raw.githubusercontent.com/jervw/urbaani-cli/main/LICENSE)  |
+  | yaac 	   | [GPL2](https://raw.githubusercontent.com/viirret/yaac/main/LICENSE)      |
   | ...  | ...  |
  
   
