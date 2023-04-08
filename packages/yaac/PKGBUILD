@@ -1,7 +1,7 @@
 # Maintainer: Valtteri Viirret <viirretvaltteri@gmail.com>
 
 pkgname=yaac
-pkgver=0.3
+pkgver=0.4
 pkgrel=1
 pkgdesc="Graphical alarm clock application"
 arch=('x86_64')
@@ -9,7 +9,7 @@ url=https://github.com/viirret/yaac
 license=('GPL2')
 depends=('sdl2' 'sdl2_mixer' 'sdl2_ttf' 'gnu-free-fonts' 'deepin-sound-theme' 'cmake')
 source=("https://github.com/viirret/yaac/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('642f8d9ecdaf11cbcfd19918efae82fc709d6971c6e5effab9cbbdef9df649af')
+sha256sums=('1dc43d1d0574d658a30f30cb0089638749dad262636d9517c3d6daa032a74427')
 
 build() {
 	cd "$srcdir/$pkgname-$pkgver"
