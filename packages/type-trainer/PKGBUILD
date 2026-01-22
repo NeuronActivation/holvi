@@ -1,0 +1,22 @@
+# Maintainer: Valtteri Viirret <viirretvaltteri@gmail.com>
+
+pkgname=type-trainer
+pkgver=1.0.1
+pkgrel=1
+pkgdesc="Lightweight typing practise application"
+arch=('x86_64')
+url=https://github.com/viirret/type-trainer
+license=('GPL2')
+depends=('make' 'words' 'sdl2' 'sdl2_ttf' 'gnu-free-fonts')
+source=("https://github.com/viirret/type-trainer/archive/refs/tags/${pkgver}.tar.gz")
+sha256sums=('b79c480b16bcd46a39482f60c43f0a9bec6a9e3ac33a416a636f3480d3473b0f')
+
+build() {
+	cd "$srcdir/$pkgname-$pkgver"
+	make
+}
+
+package() {
+	install -Dm755 "$srcdir/$pkgname-$pkgver/build/typing_trainer" "$pkgdir/usr/bin/$pkgname"
+}
+
